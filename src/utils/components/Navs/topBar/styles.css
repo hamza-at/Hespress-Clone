@@ -4,12 +4,14 @@
     justify-content:space-between;
 
 }
+
 .magnifierContainer {
     display: none;
 
 }
 .searchEngine{
-    margin-left: 15px;
+    margin-left: 35px;
+    float: left;
 
 }
 
@@ -29,14 +31,19 @@ margin-left: 30px;
 aside input {
     width: 100%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
+.searchEngine{
+    display: block;
+    float: left;
 
+}
     .magnifierContainer {
         display: block;
         width: 25%;
     }
     aside input {
         width: 100%;
+
     }
     .nav-item-top {
         position: relative;
@@ -44,6 +51,31 @@ aside input {
     }
     .nav-item-top{
         float: right;
+        display: block;
+
+    }
+}
+@media screen and (max-width: 400px) {
+    .searchEngine {
+        display: block;
+        float: right;
+    }
+    .magnifierContainer {
+        display: block;
+        width: 55%;
+    }
+    aside input {
+        width: 100%;
+
+
+    }
+    .nav-item-top {
+        position: relative;
+
+    }
+    .nav-item-top{
+        float: right;
+        display: block;
         display: block;
 
     }

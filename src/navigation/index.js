@@ -7,8 +7,8 @@ const Navigation = ()=> {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" render={()=><Home/>} component={Home} />
-                <Route  component={notFound} path={'*'} render={()=><notFound/>}  />
+                <Route exact path="/" component={Home} />
+                <Route  component={notFound}  />
 
             </Switch>
         </BrowserRouter>

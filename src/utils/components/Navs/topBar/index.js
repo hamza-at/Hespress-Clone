@@ -38,11 +38,11 @@ const TopBar = () => {
 
                     </ul>
                     <div className="searchEngine">
-                    <div className="magnifierContainer">
+                    <div className="magnifierContainer ">
                             <i className="btn btn-outline-dark" onClick={handleVisibility}><img src={search} alt="searchicon"/></i>
                     </div>
                     <aside style={visible ? {display: `block`,transition: `display 0.35s ease-out` } : {display: `none`,transition: `display 0.35s ease-out` }}>
-                        <input  type="search" placeholder="Search" aria-label="Search" />
+                        <input  type="search" placeholder="Search" aria-label="Search" className="searchInput" />
                     </aside>
                     </div>
                 </div>

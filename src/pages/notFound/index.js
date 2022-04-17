@@ -1,11 +1,14 @@
 import React from 'react';
-import {NavLink, useHistory} from 'react-router-dom';
+import { useHistory} from 'react-router-dom';
 
 function NotFound() {
     let history = useHistory();
     const handleClick = () => {
         history.push('/');
+        document.location.reload()
+
     }
+
     return (
         <div>
             <h1>404 - Not Found!</h1>
