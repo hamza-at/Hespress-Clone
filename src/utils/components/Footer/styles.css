@@ -1,0 +1,13 @@
+Footer section {
+    border:1px solid transparent;
+    margin:0;
+    padding: 0;
+
+}
+.newsletter-box,#text-3{
+    text-align: center;
+}
+.btn-outline-secondary {
+    color: #ffffff;
+    background: #090b1a;
+}
