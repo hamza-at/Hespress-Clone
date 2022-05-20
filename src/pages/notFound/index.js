@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 import { useHistory} from 'react-router-dom';
 
 function NotFound() {
@@ -10,7 +11,7 @@ function NotFound() {
     }
 
     return (
-        <div>
+        <div className="container404">
             <h1>404 - Not Found!</h1>
             <button onClick={handleClick}>Go Home</button>
         </div>

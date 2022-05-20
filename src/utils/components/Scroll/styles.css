@@ -1,0 +1,11 @@
+.body{
+    overflow-y: scroll;
+    border:2px solid white;
+    height:650px;
+}
+
+/*scrollbar Sidebar*/
+.body::-webkit-scrollbar {
+    width: 10px;
+}
+

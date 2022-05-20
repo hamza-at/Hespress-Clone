@@ -27,7 +27,7 @@ import sandwich from "../../../assets/images/sandwich.svg";
             <footer className="text-center text-lg-start bg-light text-muted"  >
 
                 <section
-                    className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style={{backgroundColor:"#4d5a85"}}>
+                    className="d-flex w-100 justify-content-center justify-content-lg-between p-4 border-bottom" style={{backgroundColor:"#4d5a85"}}>
                     <section className="container-fluid dark region-12 grid-section text-white" >
                         <div className="container-fluid">
                             <div className="row box-after-footer">

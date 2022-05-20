@@ -1,0 +1,19 @@
+.main-content{
+    padding:200px 2px 100px 2px;
+}
+.title1 {
+font-family:'DIN Next LT Arabic Regular',Fallback, sans-serif;
+font-weight: bold;
+font-size: 25px;
+}
+.hot {
+    font-family:'DIN Next LT Arabic Regular',Fallback, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin:2px 30px 15px 0;
+
+}
+.wpp-list {
+    margin-right: 30px;
+    white-space: normal;
+}

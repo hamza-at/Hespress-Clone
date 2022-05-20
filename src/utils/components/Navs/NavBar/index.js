@@ -1,22 +1,13 @@
 import React, {useEffect, useState} from "react";
 import './styles.css';
-import Popup from "reactjs-popup";
-import SideBar from "../CustomSideBar";
-import Sidebar from "react-sidebar";
+
 import sandwich from "../../../../assets/images/sandwich.svg";
+import {NavLink} from "react-router-dom";
 
 
 
 const NavBar = ({onClick}) => {
-    const [sidebarOpen, setSidebarOpen] = useState(true)
-
-    function onSetSidebarOpen(open) {
-        setSidebarOpen(open)
-
-    }
-    function Change(){
-        setSidebarOpen(false)
-    }
+useEffect(()=>{},[])
 
 function NavLinks(){
         return(
@@ -32,36 +23,37 @@ function NavLinks(){
 
                         <li className="menu-item nav-item-second"><a className="nav-link"
                                                                      href="/">الرئيسية</a></li>
-                        <li className="menu-item nav-item "><a className="nav-link"
-                                                               href="https://www.hespress.com/politique">سياسة</a>
+                        <li className="menu-item nav-item "><a  href="/politics"
+                         className="nav-link">
+                            سياسة</a>
                         </li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/regions">جهات</a></li>
+                                                              href="/Regions">جهات</a></li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/societe">مجتمع</a></li>
+                                                              href="/societe">مجتمع</a></li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/economie">اقتصاد</a>
+                                                              href="/economie">اقتصاد</a>
                         </li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/faits-divers">حوادث</a>
+                                                              href="/faits-divers">حوادث</a>
                         </li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/medias">السلطة
+                                                              href="/medias">السلطة
                             الرابعة</a></li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/art-et-culture">فن
+                                                              href="/art">فن
                             و ثقافة</a>
                         </li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/tamazight">تمازيغت</a>
+                                                              href="/tamazight">تمازيغت</a>
                         </li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/sport">رياضة</a></li>
+                                                              href="/sport">رياضة</a></li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/sawt-soura">صوت
+                                                              href="/sawt-soura">صوت
                             و صورة</a></li>
                         <li className="menu-item nav-item"><a className="nav-link"
-                                                              href="https://www.hespress.com/international">خارج
+                                                              href="/international">خارج
                             الحدود</a>
                         </li>
                     </ul>
@@ -72,71 +64,7 @@ function NavLinks(){
 
     return (
         <div className="Sidebar">
-            <div className="nav-item  dropdown-toggle-split drawer">
-                {/*<Sidebar
-                    sidebar={<div><CustomSideBar close={Change}/></div>}
-                    open={sidebarOpen}
-                    onSetOpen={onSetSidebarOpen}
-                    pullRight={true}
-                    styles={{
-                        root: {
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            overflow: "hidden",
-
-
-                        },
-                        sidebar: {
-                            zIndex: 2,
-                            position: "fixed",
-                            top: 0,
-                            bottom: 0,
-                            width: "30%",
-                            transition: "transform .3s ease-out",
-                            WebkitTransition: "-webkit-transform .3s ease-out",
-                            willChange: "transform",
-                            overflowY: "auto",
-                            background: "white",
-                        },
-                        content: {
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            bottom: 0,
-                            overflowY: "auto",
-                            WebkitOverflowScrolling: "touch",
-                            transition: "left .3s ease-out, right .3s ease-out",
-                            right: 'Opx'
-                        },
-                        overlay: {
-                            zIndex: 1,
-                            position: "fixed",
-                            top: 0,
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            opacity: 0,
-                            visibility: "hidden",
-                            transition: "opacity .3s ease-out, visibility .3s ease-out",
-                            backgroundColor: "rgba(30,34,180,0.8)",
-
-                        },
-                        dragHandle: {
-                            zIndex: 1,
-                            position: "fixed",
-                            top: 0,
-                            bottom: 0
-                        }
-                    }}
-
-                >
-                    <b> </b>
-                </Sidebar>*/}
-    </div>
-
+            <div className="nav-item  dropdown-toggle-split drawer"/>
             {NavLinks()}
 
         </div>

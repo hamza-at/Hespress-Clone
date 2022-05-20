@@ -1,2 +1,13 @@
         export { default as Home}  from './home';
-       export { default as notFound}  from './notFound';
+        export { default as Regions} from './regions';
+        export { default as Politics} from './politics';
+        export { default as Societe} from './societe';
+        export { default as Economie} from './economie';
+        export { default as Faitsdivers} from './faits-divers';
+        export { default as Medias} from './medias';
+        export { default as Art} from './art';
+        export { default as Tamazight} from './tamazight';
+        export { default as Sport} from './sport';
+        export { default as Sawtsoura} from './sawt-soura';
+        export { default as International} from './international';
+        export { default as notFound}  from './notFound';

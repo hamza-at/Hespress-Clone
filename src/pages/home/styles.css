@@ -1,14 +1,38 @@
 body{
     direction:rtl;
 }
-.affix #first {
-    padding-top: 0.2em !important;
-    padding-bottom: 0.2em !important;
-    -webkit-transition:padding 0.2s linear;
-    -moz-transition:padding 0.2s linear;
-    -o-transition:padding 0.2s linear;
-    transition:padding 0.2s linear;
-}
+
 
 section {
-    margin-top: 200px;}
+    margin: 200px 2px 100px 2px;}
+.GaucheSec{
+}
+.title{
+    font-family:'DIN Next LT Arabic Regular',Fallback, sans-serif;
+     color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    background: #8f1414;
+    border-radius: 10px;
+}
+.MilieuSec{
+    margin-top: 290px;
+}
+.titlemilieu{
+    font-family:'DIN Next LT Arabic Regular',Fallback, sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    background: rgba(9, 11, 26, 0.66);
+    border-radius: 10px;
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: underline; }
+
+
+a:active { text-decoration: none; }
